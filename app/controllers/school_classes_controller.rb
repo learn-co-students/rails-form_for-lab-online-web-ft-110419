@@ -1,5 +1,5 @@
 class SchoolClassesController < ApplicationController
-  before_action :find_school, only: [:show, :edit]
+  before_action :find_school, only: [:show, :edit, :update]
   
   def new 
   end
@@ -16,7 +16,10 @@ class SchoolClassesController < ApplicationController
   end
   
   def update
+    @school.update(school_params)
+    redirect_to @school
   end
+  
   
   
   
