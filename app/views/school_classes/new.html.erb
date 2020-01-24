@@ -1,0 +1,11 @@
+<h1>Create a New Class</h1>
+
+
+<h3>School Class Form</h3>
+<%= form_for(@class) do |c_form| %>
+	<p><%= c_form.label :title %>
+	<%= c_form.text_field :title %></p>
+	<p><%= c_form.label :room_number %>
+	<%= c_form.number_field :room_number %></p>
+	<p><%= c_form.submit %></p>
+<% end %>
