@@ -29,6 +29,7 @@ describe 'form page' do
     click_on "Update School class"
 
     expect(page).to have_content("Risk Analysis")
+    
   end
 
   it 'submitted new form creates a record in the database' do
