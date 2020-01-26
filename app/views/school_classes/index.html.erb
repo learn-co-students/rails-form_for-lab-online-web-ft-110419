@@ -1,0 +1,12 @@
+<%= link_to "See All Students", students_path %>
+<br>
+<%= link_to "Add New Class", new_school_class_path %>
+
+<h1>School Classes</h1>
+<ul>
+  <% @school_classes.each do |school_class| %>
+    <li>
+      <%= link_to school_class.title, school_class_path(school_class) %>
+    </li>
+  <% end %>
+</ul>
