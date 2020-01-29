@@ -34,14 +34,13 @@ class StudentsController < ApplicationController
         params.require(:student).permit(*args) # permit means that the params hash may have whatever keys are in it. 
     end
 
-# The '(*)' in '(*args)' - This is the splat operator, 
-# which comes from ruby (and is thus not rails specific). 
-# It can be applied in two ways depending on where it is used:
+    # The '(*)' in '(*args)' - This is the splat operator, 
+    # which comes from ruby (and is thus not rails specific). 
+    # It can be applied in two ways depending on where it is used:
 
-# to "pack" a number of arguments into an array
-# to split up an array into an argument list
-# In your function, you see the splat operator used in the function definition. 
-# The result is that the function accepts any number of arguments. 
-# The complete argument list will be put into args as an array.
-
+    # to "pack" a number of arguments into an array
+    # to split up an array into an argument list
+    # In your function, you see the splat operator used in the function definition. 
+    # The result is that the function accepts any number of arguments. 
+    # The complete argument list will be put into args as an array.
 end

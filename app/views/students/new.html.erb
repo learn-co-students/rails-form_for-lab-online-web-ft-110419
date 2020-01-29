@@ -1,7 +1,10 @@
-<h1>Student Form</h1>
-<%= form_for(@student) do |f| %>
+<h1>Student Form</h1> 
 
-    <%= f.label :first_name %>
+<!-- @student is equal to Student.new, Then the form is filled out for the create method in the students controller -->
+
+<%= form_for(@student) do |f| %> 
+
+    <%= f.label :first_name %> 
     <%= f.text_field :first_name %>
 
     <%= f.label :last_name %>
