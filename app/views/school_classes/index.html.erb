@@ -1,0 +1,11 @@
+<%=link_to "All Student In Classes", students_path%>
+<br>
+<%=link_to "Add New Student To Class", new_school_class_path%>
+<h1>School Class</h1>
+<ul>
+<%= @school_classes.each do |school_class| %>
+<li>
+<%=link_to school_class.title, school_class_path(school_class)%>
+</li>
+<%end%>
+</ul>
